@@ -1,0 +1,283 @@
+/*FUENTES/*
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+    font-family: "Kurale";
+}
+
+h2 {
+    font-family: "Open Sans";
+}
+
+h3 {
+    font-family: "Open Sans";
+}
+
+h4 {
+    font-family: "Open Sans";
+}
+
+p {
+    font-family: "Open Sans";
+}
+
+span {
+    font-family: "Open Sans";
+}
+
+li {
+    font-family: "Open Sans";
+}
+
+.navegación {
+    font-family: "Raleway";
+}
+
+.footer {
+    font-family: "Raleway";    
+}
+
+/*ESTILO FORMULARIO*/
+
+
+/*ESTILO DE LINKS*/
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(182, 204, 247);
+}
+
+
+/*BARRA DE NAVEGACIÓN*/
+
+main{
+    padding: 20px;
+}
+
+#formulario-contacto {
+        max-width: 600px;
+        margin: 0 auto;
+}
+
+label{ 
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc
+}
+
+button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.navegación {
+    background-color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.navbutton {
+    border: none;
+    background-color: #333;
+    font-size: 12px;
+    margin: 0px 5px 0px 5px;
+}
+
+
+/*BODY GENERAL*/
+    
+body {
+background-color: rgb(177, 187, 196);
+margin: 0;    
+}
+
+
+/*FOOTER*/
+
+.footer {
+    width: 100vw;
+    font-size: 10px;
+    color: white;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.h4footer {
+    margin: 5px 5px 0px 5px;
+    padding: 5px 5px 0px 5px;
+    font-size: 13px;
+}
+
+.bannerfooter {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid 2px white;
+}
+
+.imgfooter {
+    height: 3vh;
+}
+
+.telefonosutiles {
+    margin: 5px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+.tablatelefonos {
+    width: 90vw;
+    border-spacing: 2px 0px 2px 0px;
+    align-content: center;
+}
+
+.tdorganismo {
+    text-align: left;
+}
+
+.tdnumero {
+    text-align: right;
+}
+
+.rutasfooter {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+.suscribite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+.copyright {
+    width: 100 vw;
+    border-top: solid 2px white;
+    margin: 10px 0px 5px 0px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+
+/*RESPONSIVE BARRA DE NAVEGACIÓN*/
+
+@media (min-width: 768px) {
+    .navbutton {
+        font-size: 15px;
+        margin: 5px 10px 5px 10px;
+    }
+}
+
+@media (min-width: 990px) {
+    .navbutton {
+        font-size: 20px;
+    }
+}
+
+
+/*RESPONSIVE FOOTER*/
+
+@media (min-width: 768px){
+
+    .footer {
+        font-size: 13px;
+    }
+
+    .h4footer {
+        font-size: 16px;
+    }
+
+    .bannerfooter {
+        font-size: 14px;
+    }
+
+    .tablatelefonos {
+        width: 45vw;
+    }
+
+    .divseccionfooter1 {
+        width: 50vw;
+        border-right: solid 1px white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 2px 2px 0px 2px;
+        padding: 0px 2px 10px 2px;
+    }
+
+    .divseccionfooter2 {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 2px 2px 0px 2px;
+        padding: 0px 2px 10px 2px;
+    }
+
+    .divseccionesfooter {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }   
+
+    .copyright {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 990px) {
+
+    .footer {
+        font-size: 17px;
+    }
+
+    .h4footer {
+        font-size: 20px;
+    }
+
+    .footerform {
+        width: 20vw;
+        height: 3vh;
+    }
+
+    .footerbutton {
+        width: 10vw;
+        font-size: 17px;
+    }
+}
+
+
