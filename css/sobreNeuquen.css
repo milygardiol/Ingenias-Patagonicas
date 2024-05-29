@@ -1,9 +1,9 @@
 /*SOBRE NEUQUÉN*/
 
 .sobreNeuquen {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    color: rgb(121, 48, 0);
+    color: grey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,17 +60,17 @@
 }
 
 .imgcamion {
-    width: 26vw;
+    width: 28vw;
     border: double rgb(230, 238, 245);
 }
 
 .imggas {
-    width: 26vw;
+    width: 28vw;
     border: double rgb(230, 238, 245);
 }
 
 .imgpaisaje2 {
-    width: 26vw;
+    width: 28vw;
     border: double rgb(230, 238, 245);
 }
 
@@ -164,7 +164,7 @@
 @media (min-width: 768px) {
 
     .sobreNeuquen {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .divubicacion {
@@ -191,28 +191,28 @@
 
     .parrafoactividades {
         font-size: 18px;
-        width: 30vw;
+        width: 35vw;
     }
 
     .imgactividades {
-        width: 50vw;
+        width: 40vw;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .imgcamion {
-        width: 50vw;
+        width: 40vw;
         margin-bottom: 5px;
     }
 
     .imggas{
-        width: 50vw;
+        width: 40vw;
         margin-bottom: 5px;
     }
 
     .imgpaisaje2 {
-        width: 50vw;
+        width: 40vw;
     }
 
     .divreseñahistorica {
@@ -270,7 +270,7 @@
 @media (min-width: 990px) {
 
     .sobreNeuquen {
-       font-size: 85px;
+       font-size: 70px;
     }
 
     .divubicacion {
@@ -306,16 +306,19 @@
 
     .imgcamion {
         width: 17vw;
+        height: 25vh;
         margin-bottom: 10px;
     }
 
     .imggas {
         width: 17vw;
+        height: 25vh;
         margin-bottom: 10px;
     }
 
     .imgpaisaje2 {
         width: 17vw;
+        height: 25vh;
     }
 
     .div-ubicación-actividades {
@@ -349,7 +352,7 @@
     }
 
     .imgescudo {
-        width: 45vw;
+        width: 40vw;
     }
 
     .divbandera {
@@ -362,6 +365,10 @@
     .parrafobandera {
         width: 45vw;
         text-align: center;
+    }
+
+    .imgbandera {
+        width: 40vw;
     }
 
     .div-escudo-bandera {
