@@ -1,0 +1,68 @@
+/*FUENTES ESPECIFICAS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+/*h1 - QUIENES SOMOS*/
+
+.quienesSomos {
+    font-size: 30px;
+    text-align: center;
+    color: grey;
+    background-color: lightblue;
+}
+
+
+/*TEXTO*/
+
+.div-texto-firma {
+    font-size: 14px;
+    margin: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
+    background-color: rgb(165, 155, 155);
+}
+
+.firmagrupal {
+    font-family: "courgette";
+    font-size: 18px;
+    text-align: right;
+}
+
+
+/*RESPONSIVE*/
+
+@media (min-width: 768px) {
+
+    .quienesSomos {
+        font-size: 50px;
+    }
+
+    .div-texto-firma {
+        font-size: 18px;
+    }
+
+    .firmagrupal {
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width: 990px) {
+
+    .quienesSomos {
+        font-size: 70px;
+    }
+
+    .div-texto-firma {
+        font-size: 22px;
+    }
+
+    .firmagrupal {
+        font-size: 26px;
+    }
+
+}
+
+
+
+
