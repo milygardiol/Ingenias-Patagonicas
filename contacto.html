@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/general.css"/>
+    <link rel="stylesheet" href="css/contacto.css"/>
+</head>
+    
+<body>
+
+    <header>
+        <nav class="navegación"> <!--Barra de navegación-->
+            <button class="navbutton"> <a href="/index.html">Inicio</a></button>
+            <button class="navbutton"> <a href="/quienesSomos.html">Quiénes somos</a></button>
+            <button class="navbutton"> <a href=#Regiones>Regiones</a></button>
+            <button class="navbutton"> <a href="/sobreNeuquen.html">Sobre Neuquén</a></button>
+            <button class="navbutton"> <a href="/calendario.html"> Calendario de Fiestas</a></button>
+            <button class="navbutton"> <a href="/contacto.html">Contacto</a></button>
+        </nav>
+        <h1 class="h1contacto">
+            Contacto
+        </h1>
+    </header>
+
+    <main> <!--Formulario de contacto-->
+        <h2 class="h2contacto">
+            Formulario de contacto
+        </h2>
+        <section id="formulario-contacto">
+                <form action="contactos.html" method="post">
+                    <label for="Apellido y nombre">Apellido y nombre:</label>
+                    <input class="inputcontacto" type="text" required>
+                    <label for="email">Email:</label>
+                    <input class="inputcontacto" type="email" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    <button class="buttoncontacto" type="submit">Enviar</button>
+                </form>
+        </section>
+    </main>
+ 
+    <footer class="footer">  <!--Footer-->
+    <section> <!--Redes del Gobierno de la Provincia-->
+        <div class="bannerfooter">
+            <p>Gobierno de la Provincia</p>
+            <a href="https://twitter.com/GobProvinciaNqn" target="_blank"><img src="images/banner-footer-X.jpg" alt="Redes del Gobierno de la Provincia: X" class="imgfooter"></a>
+            <a href="https://www.youtube.com/channel/UCq85VvDP9r_KwZUBMxw1dvA" target="_blank"><img src="images/banner-footer-youtube.jpg" alt="Redes del Gobierno de la Provincia: Youtube" class="imgfooter"></a>
+            <a href="https://www.facebook.com/GobiernoDeLaProvinciaDelNeuquen/?locale=es_LA" target="_blank"><img src="images/banner-footer-facebook.jpg" alt="Redes del Gobierno de la Provincia: Facebook" class="imgfooter"></a>
+            <a href="https://www.instagram.com/gobiernoprovinciadelneuquen/" target="_blank"><img src="images/banner-footer-instagram.jpg" alt="Redes del Gobierno de la Provincia: Instagram" class="imgfooter"></a>
+        </div>
+    </section>
+
+    <div class="divseccionesfooter">
+        <div class="divseccionfooter1">
+            <section> <!--Teléfonos útiles-->
+                <h4 class="h4footer">Teléfonos útiles</h4>
+                <div class="telefonosutiles">
+                    <table class="tablatelefonos">
+                        <tr>
+                            <td class="tdorganismo">Bomberos</td>
+                            <td class="tdnumero">100</td>
+                        </tr>
+                        <tr>
+                            <td class="tdorganismo">Policía</td>
+                            <td class="tdnumero">101</td>
+                        </tr>
+                        <tr>
+                            <td class="tdorganismo">Defensa Civil</td>
+                            <td class="tdnumero">105</td>
+                        </tr>
+                        <tr>
+                            <td class="tdorganismo">Emergencias Médicas (SIEN)</td>
+                            <td class="tdnumero">107</td>
+                        </tr>
+                        <tr>
+                            <td class="tdorganismo">Ministerio de Salud</td>
+                            <td class="tdnumero">0800-333-1002</td>
+                        </tr>
+                        <tr>
+                            <td class="tdorganismo">Denuncias por Violencia de Género</td>
+                            <td class="tdnumero">144</td>
+                        </tr>
+                        <tr>
+                            <td class="tdorganismo">Denuncias por Trata de Personas</td>
+                            <td class="tdnumero">145</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <div class="divseccionfooter2">
+            <section> <!--Estado de las Rutas-->
+                <h4 class="h4footer">Estado de las Rutas</h4>
+                <div class="rutasfooter">
+                    <p>Consultas al 0800-222-2667</p>
+                    <a href="https://w2.dpvneuquen.gov.ar/ParteDiario.pdf" target="_blank"> <p>Ir al parte diario</p> </a>
+                </div>
+            </section>
+
+            <section> <!--Suscribite-->
+                <h4 class="h4footer">Suscribite</h4> 
+                <div class="suscribite">
+                    <p>Recibí el resumen mensual de nuestras novedades</p>
+                        <form action="#">
+                            <input type="email" name="email" placeholder="Dirección de correo electrónico" class="footerform">
+                            <button type="submit" class="footerbutton">Suscribirse</button>
+                        </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section> <!--Copyright-->
+        <p class="copyright">&copy;2024 Ingenias Patagónicas. Todos los derechos reservados.</p>
+    </section>
+</footer>
+
+</body>
+
+</html>
