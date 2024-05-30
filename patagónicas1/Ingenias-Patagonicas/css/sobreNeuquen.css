@@ -1,0 +1,386 @@
+/*SOBRE NEUQUÉN*/
+
+.sobreNeuquen {
+    font-size: 30px;
+    text-align: center;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+
+/*UBICACIÓN*/
+
+.divubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafoubicacion {
+    font-size: 14px;
+    margin: 15px 10px 15px 10px;
+    padding: 12px 10px 12px 10px;
+    background-color: rgb(165, 155, 155);
+}
+
+.imgubicacion {
+    width: 90vw;
+    border: double rgb(230, 238, 245);
+    margin: 15px 10px 15px 10px;
+}
+
+
+/*ACTIVIDADES*/
+
+.divactividades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafoactividades {
+    font-size: 14px;
+    margin: 15px 10px 15px 10px;
+    padding: 12px 10px 12px 10px;
+    background-color: rgb(165, 155, 155);
+}
+
+.imgactividades {
+    width: 90vw;
+    margin: 15px 10px 15px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.imgcamion {
+    width: 28vw;
+    border: double rgb(230, 238, 245);
+}
+
+.imggas {
+    width: 28vw;
+    border: double rgb(230, 238, 245);
+}
+
+.imgpaisaje2 {
+    width: 28vw;
+    border: double rgb(230, 238, 245);
+}
+
+
+/*RESEÑA HISTÓRICA Y VIDEO*/
+
+.divreseñahistorica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parraforeseñahistorica {
+    font-size: 14px;
+    margin: 15px 10px 15px 10px;
+    padding: 12px 10px 12px 10px;
+    background-color: rgb(165, 155, 155);
+}
+
+.videosobreneuquen {
+    width: 90vw;  
+    margin: 15px 10px 15px 10px;
+    border: double rgb(230, 238, 245);
+}
+
+
+/*ESCUDO*/
+
+.divescudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafoescudo {
+    font-size: 14px;
+    margin: 15px 10px 15px 10px;
+    padding: 12px 10px 12px 10px;
+    background-color: rgb(165, 155, 155);
+}
+
+.imgescudo {
+    width: 90vw;
+    margin: 15px 10px 15px 10px;
+    border: double rgb(230, 238, 245);
+}
+
+
+/*BANDERA*/
+
+.divbandera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafobandera {
+    font-size: 14px;
+    margin: 15px 10px 15px 10px;
+    padding: 12px 10px 12px 10px;
+    background-color: rgb(165, 155, 155);
+}
+
+.imgbandera {
+    width: 90vw;
+    margin: 15px 10px 15px 10px;
+    border: double rgb(230, 238, 245);
+}
+
+
+/*HIMNO*/
+
+.divhimno {
+    display: flex;
+    justify-content: center;
+}
+
+.parrafohimno {
+    font-size: 14px;
+    margin: 15px 10px 15px 10px;
+    padding: 12px 10px 12px 10px;
+    background-color: rgb(165, 155, 155);
+}
+
+
+/*RESPONSIVE BODY SOBRE-NEUQUEN*/
+
+@media (min-width: 768px) {
+
+    .sobreNeuquen {
+        font-size: 50px;
+    }
+
+    .divubicacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .parrafoubicacion {
+        font-size: 18px;
+        width: 30vw;
+    }
+
+    .imgubicacion {
+        width: 50vw;
+    }
+
+    .divactividades {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .parrafoactividades {
+        font-size: 18px;
+        width: 35vw;
+    }
+
+    .imgactividades {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgcamion {
+        width: 40vw;
+        margin-bottom: 5px;
+    }
+
+    .imggas{
+        width: 40vw;
+        margin-bottom: 5px;
+    }
+
+    .imgpaisaje2 {
+        width: 40vw;
+    }
+
+    .divreseñahistorica {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parraforeseñahistorica {
+        font-size: 18px;
+        width: 90vw;
+    }
+
+    .videosobreneuquen{
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .divescudo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .parrafoescudo {
+        font-size: 18px;
+        width: 30vw;
+    }
+
+    .imgescudo {
+        width: 50vw;
+    }
+
+    .divbandera {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .parrafobandera {
+        font-size: 18px;
+        width: 35vw;
+    }
+
+    .imgbandera {
+        width: 45vw;
+    }
+
+    .parrafohimno {
+        font-size: 18px;
+        width: 90vw;
+    }
+}
+
+@media (min-width: 990px) {
+
+    .sobreNeuquen {
+       font-size: 70px;
+    }
+
+    .divubicacion {
+       background-color: rgb(165, 155, 155);
+       width: 48vw;
+    }
+
+    .parrafoubicacion {
+        width: 15vw;
+        text-align: right;
+    }
+
+    .imgubicacion {
+        width: 25vw;
+    }
+
+    .divactividades {
+        width: 48vw;
+        background-color: rgb(197, 195, 144);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imgactividades {
+        width: 17vw;
+    }
+
+    .parrafoactividades {
+        width: 25vw;
+        background-color: rgb(197, 195, 144);
+        text-align: right;
+    }
+
+    .imgcamion {
+        width: 17vw;
+        height: 25vh;
+        margin-bottom: 10px;
+    }
+
+    .imggas {
+        width: 17vw;
+        height: 25vh;
+        margin-bottom: 10px;
+    }
+
+    .imgpaisaje2 {
+        width: 17vw;
+        height: 25vh;
+    }
+
+    .div-ubicación-actividades {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .parraforeseñahistorica {
+        text-align: center;
+    }
+
+    .videosobreneuquen {
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .divescudo {
+        width: 48vw;
+        background-color: rgb(197, 195, 144);
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .parrafoescudo {
+        width: 45vw;
+        background-color: rgb(197, 195, 144);
+        text-align: center;
+    }
+
+    .imgescudo {
+        width: 40vw;
+    }
+
+    .divbandera {
+        width: 48vw;
+        background-color: rgb(165, 155, 155);
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .parrafobandera {
+        width: 45vw;
+        text-align: center;
+    }
+
+    .imgbandera {
+        width: 40vw;
+    }
+
+    .div-escudo-bandera {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .parrafohimno {
+        background-color: rgb(197, 195, 144);
+        text-align: center;
+    }
+
+}
