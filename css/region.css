@@ -1,3 +1,14 @@
+/*h2 REGION DE LAGOS*/
+
+.h1region {
+    font-family: "kurale";
+    font-size: 30px;
+    color: rgb(121, 48, 0);
+    text-align: center;
+    margin 10px 10px 10px 10xp;
+    background-color:rgba(245, 245, 245, 0.484)
+}
+
 
 /*BLOQUES DE TEXTO E IMAGENES*/
 
@@ -125,6 +136,10 @@
 
 @media (min-width: 768px) {
 
+    .h1region {
+        font-size: 50px;
+    }
+
     .one-block {
         display: flex;
         flex-direction: row;
@@ -202,6 +217,10 @@
 }
 
 @media (min-width: 990px) {
+
+    .h1region {
+        font-size: 70px;
+    }
 
     .text-one {
         font-size: 18px;
