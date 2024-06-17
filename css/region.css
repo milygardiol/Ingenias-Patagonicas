@@ -1,12 +1,11 @@
 /*h2 REGION DE LAGOS*/
 
 .h1region {
-    font-family: "kurale";
     font-size: 30px;
-    color: rgb(121, 48, 0);
+    color: grey;
     text-align: center;
     margin 10px 10px 10px 10xp;
-    background-color:rgba(245, 245, 245, 0.484)
+    background-color:lightblue;
 }
 
 
