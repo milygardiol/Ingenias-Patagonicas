@@ -1,13 +1,21 @@
-
+const dbUsuarios = require('./json/usuarios.json')
 
 // Solicitar el nombre del usuario
 let nombre = prompt("Por favor, ingresa tu nombre:");
+let email = prompt("Ingrese su email: ");
+let password = prompt("Ingrese su contraseña: ");
 
-// Verificar si el usuario ingresó un nombre
-if (nombre) {
-    // Mostrar un mensaje de agradecimiento personalizado
-    alert("¡Gracias por visitar nuestro sitio web y nuestra Provincia, " + nombre + "!" + " Esperamos que disfrutes tu visita.");
-} else {
-    // Mostrar un mensaje de agradecimiento general si no se ingresó un nombre
-    alert("¡Gracias por visitar nuestro sitio web y nuestra Provincia! Esperamos que disfrutes tu visita.");
-}
+
+
+let usuarios = JSON.parse(dbUsuarios);
+console.log(usuarios);
+
+
+while(nombre =! null, email != null, password != null) {
+    prompt("Ingrese sus datos correctamente para ingresar")
+    nombre = prompt("Por favor, ingresa tu nombre:");
+    email = prompt("Ingrese su email: ");
+    password = prompt("Ingrese su contraseña: ");
+};
+
+
