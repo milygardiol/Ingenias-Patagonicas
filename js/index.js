@@ -16,7 +16,6 @@ function agregarUsuario(nombre, email, password) {
     guardarUsuarios(usuarios);
 }
 
-
 //Solicita los datos del usuario mediante "prompt" añade al usuario a la bd y almacena la información en localStorage
 function solicitarDatos() {
     let nombre = prompt("Por favor, ingresa tu nombre:");

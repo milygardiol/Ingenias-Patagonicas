@@ -1,0 +1,275 @@
+/*h2 REGION DE LAGOS*/
+
+.h1region {
+    font-size: 30px;
+    color: grey;
+    text-align: center;
+    margin 10px 10px 10px 10xp;
+    background-color:lightblue;
+}
+
+
+/*BLOQUES DE TEXTO E IMAGENES*/
+
+.one-block {
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-one {
+    font-size: 14px;
+    width: 90vw;
+}
+
+.text-one h2 {
+    text-align: center;
+}
+
+.one-img {
+    width: 90vw;
+}
+
+.second-block {
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-second {
+    font-size: 14px;
+    width: 90vw;
+}
+
+.text-second h2 {
+    text-align: center;
+}
+
+.second-img {
+    width: 90vw;
+}
+
+.third-block {
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-third {
+    font-size: 14px;
+    width: 90vw;
+    padding: 2px 2px 2px 2px;
+}
+
+.text-third h2 {
+    text-align: center;
+}
+
+.third-each-img {
+    width: 90vw;
+}
+
+.third-img {
+    margin-bottom: 10px;
+}
+
+.four-block {
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-four {
+    font-size: 14px;
+    width: 90vw;
+}
+
+.text-four h2 {
+    text-align: center;
+}
+
+.four-video {
+    width: 90vw;
+}
+
+
+/*CARDS*/
+
+.container-card {
+    width: 90VW;
+    margin: 20px 15px 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card .card{
+    width: 90vw;
+    height: 70vh;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 5px 5px 5px 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25;
+}
+
+.card p {
+    padding: 0px 3px 3px 3px;
+}
+
+.container-card .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-card .card img {
+    width: 330px;
+    height: 220px;
+}
+
+
+/*RESPONSIVE BLOQUES DE TEXTO E IMAGENES*/
+
+@media (min-width: 768px) {
+
+    .h1region {
+        font-size: 50px;
+    }
+
+    .one-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-one {
+        width: 35vw;
+        margin-right: 10px;
+    }
+
+    .one-img {
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .second-block {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-second {
+        width: 35vw;
+        margin-left: 10px;
+    }
+
+    .second-img {
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .third-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .third-each-img {
+        width: 32vw;
+    }
+
+    .four-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .text-four {
+        width: 35vw;
+        margin-right: 10px;
+    }
+
+    .text-four h2 {
+        text-align: left;
+    }
+
+    .four-video {
+        width: 55vw;
+        height: 60vh;
+        padding: 5px 0px 0px 5px;
+    }
+
+}
+
+@media (min-width: 990px) {
+
+    .h1region {
+        font-size: 70px;
+    }
+
+    .text-one {
+        font-size: 18px;
+    }
+    
+    .one-img {
+        width: 60vw;
+        height: 70vh;
+    }
+
+    .text-second {
+        font-size: 18px;
+        width: 40vw;
+    }
+
+    .second-img {
+        width: 58vw;
+       height: 70vh;
+    }
+
+    .text-third {
+        font-size: 18px;
+    }
+
+    .text-four {
+        font-size: 18px;
+    }
+
+}
+
+
+/*RESPONSIVE CARDS*/
+
+@media (min-width: 768px) {
+
+    .container-card {
+        width: 95VW;
+    }
+    
+    .container-card .card{
+        width: 30vw;
+        height: 75vh;
+    }
+}
+
+@media (min-width: 990px) {
+
+    .card p {
+        font-size: 14px;
+    }
+}
+
+

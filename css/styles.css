@@ -3,7 +3,7 @@
 /*BIENVENIDOS A NEUQUÉN*/
 
 #bienvenidosfondo {
-    background-image:url(/images/paisaje1.jpg);
+    background-image:url(../images/paisaje1.jpg);
     background-position: center;
     width: 100vw;
     height: 100vh;
@@ -14,10 +14,11 @@
 }
 
 #bienvenidostexto {
+    font-family: "kurale";
     font-size: 85px;
     text-align: center;
     color: rgb(121, 48, 0);
-    margin-top: 30vh;
+    margin-top: 19vh;
 }
 
 /*¿QUÉ REGION TE GUSTARÍA VISITAR?*/
@@ -60,7 +61,7 @@
 
 
 .region1 { 
-    background-image: url(/images/estepaPatagonica.jpeg);
+    background-image: url(../images/estepaPatagonica.jpeg);
     background-size: cover;
     color: white;
     background-repeat: no-repeat;
@@ -75,7 +76,7 @@
 
 
 .region2 { 
-    background-image: url(/images/regionDeLagos.jpg);
+    background-image: url(../images/regionDeLagos.jpg);
     color: white;
     background-repeat: no-repeat;
     margin: 1rem;
@@ -89,7 +90,7 @@
 }
 
 .region3 { 
-    background-image: url(/images/patagoniaTermal.jpeg);
+    background-image: url(../images/patagoniaTermal.jpeg);
     color: white;
     background-repeat: no-repeat;
     margin: 1rem;
@@ -102,7 +103,7 @@
 }
 
 .region4 { 
-    background-image:  url(/images/vallesyVolcanes.jpg);
+    background-image:  url(../images/vallesyVolcanes.jpg);
     color: white;
     background-repeat: no-repeat;
     margin: 1rem;
@@ -134,7 +135,7 @@
 /* NOTICIAS DE NEUQUÉN */
 
 .noticias {
-    background-image: url(/images/petroleo.jpg);
+    background-image: url(../images/petroleo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
@@ -155,7 +156,7 @@
 
 .noticias-fotos {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     
 }
 
