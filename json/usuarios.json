@@ -1,5 +1,6 @@
 {
-    "nombre": "admin",
-    "email": "admin@gmail.com",
+
+    "nombre":"admin",
+    "emai":"admin@gmail.com",
     "password": "123"
 }
