@@ -28,22 +28,35 @@
     </header>
 
     <main> <!--Formulario de contacto-->
+
         <h2 class="h2contacto">
             Formulario de contacto
         </h2>
-        <section id="formulario-contacto">
 
-                <form action="../pages/contacto.html" method="post">
-
-                    <label for="Apellido y nombre">Apellido y nombre:</label>
-                    <input class="inputcontacto" type="text" required>
-                    <label for="email">Email:</label>
-                    <input class="inputcontacto" type="email" required>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                    <button class="buttoncontacto" type="submit">Enviar</button>
+        <section>
+                <form action="" id="formulario-contacto">
+                    <div>
+                        <label for="Apellido y nombre">Apellido y Nombre:</label>
+                        <input type="text" class="inputcontacto" id="apellido-nombre-contacto" name="apellido-nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" class="inputcontacto" id="email-contacto" name="email-contacto" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje-contacto" name="mensaje-contacto" rows="4" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="buttoncontacto">Enviar</button>
+                    </div>
                 </form>
+
+                <div class="errores-contacto">
+                <ul id="lista-errores-contacto"></ul>
+                </div>
         </section>
+
     </main>
  
     <footer class="footer">  <!--Footer-->
@@ -124,6 +137,8 @@
         <p class="copyright">&copy;2024 Ingenias Patagónicas. Todos los derechos reservados.</p>
     </section>
 </footer>
+
+<script src="../js/contacto.js"></script>
 
 </body>
 
