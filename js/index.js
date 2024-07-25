@@ -57,5 +57,5 @@ function mostrarInfo() {
 
 
 //Ejecutamos la función principal
-solicitarDatos();
-mostrarInfo();
+//solicitarDatos();
+//mostrarInfo();
