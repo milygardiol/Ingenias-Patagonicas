@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
     <link rel="icon" href="../images/neuquen-logo.png">
     <link rel="stylesheet" href="../css/general.css"/>
     <link rel="stylesheet" href="../css/contacto.css"/>
-
+    <title>Contacto</title>
 </head>
     
 <body>
@@ -38,18 +37,19 @@
                 <form action="" id="formulario-contacto">
                     <div>
                         <label for="Apellido y nombre">Apellido y Nombre:</label>
-                        <input type="text" class="inputcontacto" id="apellido-nombre-contacto" name="apellido-nombre" required>
+                        <input type="text" class="inputcontacto" id="apellido-nombre-contacto" name="apellido-nombre" placeholder="Apellido y Nombre" required>
                     </div>
                     <div>
                         <label for="email">Email:</label>
-                        <input type="email" class="inputcontacto" id="email-contacto" name="email-contacto" required>
+                        <input type="email" class="inputcontacto" id="email-contacto" name="email-contacto" placeholder="Email" required>
                     </div>
                     <div>
                         <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje-contacto" name="mensaje-contacto" rows="4" required></textarea>
+                        <textarea id="mensaje-contacto" name="mensaje-contacto" rows="4" placeholder="Dejanos tu mensaje y pronto nos contactaremos" required></textarea>
                     </div>
                     <div>
                         <button type="submit" class="buttoncontacto">Enviar</button>
+                        <button type="reset" class="buttoncontacto">Cancelar</button>
                     </div>
                 </form>
 

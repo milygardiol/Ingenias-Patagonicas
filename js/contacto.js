@@ -57,5 +57,16 @@ formularioDeContacto.addEventListener("submit",function(event){
 
 
 
-// PUSHEO INFORMACIÓN DEL FORMULARIO AL ARRYA
+// PUSHEO INFORMACIÓN DEL FORMULARIO AL ARRAY
+
+
+
 // PASO A FORMATO JSON
+
+let contactoJSONParaGuardar = JSON.stringify(contactoArray)
+
+
+
+// ALMACENO INFORMACIÓN NUEVA EN ARCHIVO JSON
+
+fs.writeFileSync(rutaArchivo, contactoJSONParaGuardar,"utf-8");

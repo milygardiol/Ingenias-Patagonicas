@@ -5,4 +5,4 @@
 - Gabriela Benitez
 - Soledad María Laura Lopez
 - Florencia Valenzuela
-- Gardiol Milagros Micaela
+- Milagros Micaela Gardiol 
