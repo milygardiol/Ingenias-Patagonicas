@@ -1,4 +1,4 @@
-//CREO UNA VARIABLE QUE ALMACENA UN ARRAY EN EL QUE GUARDARÉ LA INFORMACIÓN DE LOS USUARIOS QUE CONTACTAN
+//CREO UNA VARIABLE QUE ALMACENA UN ARRAY EN EL QUE GUARDARÉ LA INFORMACIÓN DE LOS USUARIOS QUE NOS CONTACTAN
 
 let dbContacto = [
     {
@@ -33,6 +33,7 @@ window.addEventListener('load',function(){
     let inputEmailContacto = document.getElementById("email-contacto");
     let inputMensajeContacto = document.getElementById("mensaje-contacto");
     let divErroresContacto = document.getElementById("errores-contacto");
+    let divMensajeRecibido = document.getElementById("mensaje-recibido");
 
     formularioContacto.addEventListener("submit",function(event){
 
@@ -62,10 +63,10 @@ window.addEventListener('load',function(){
                 Email: inputEmailContacto.value,
                 Mensaje: inputMensajeContacto.value
                 });
-            localStorage.setItem('contacto', JSON.stringify(dbContacto)); //Almaceno información nueva en local storage en formato JSON
+            localStorage.setItem('contacto', JSON.stringify(dbContacto)); //Almaceno información nueva en local storage
             let respuestaMensajeRecibido = document.createElement('p'); //Le digo al usuario que su mensaje fue recibido
-            respuestaMensajeRecibido.innerHTML = "Hemos recibido tu mensaje, en breve te contactaremos.";
-            divErroresContacto.appendChild(respuestaMensajeRecibido);
+            respuestaMensajeRecibido.innerHTML = `Hemos recibido tu mensaje, ${inputApellidoNombre.value}, en breve te contactaremos.`;
+            divMensajeRecibido.appendChild(respuestaMensajeRecibido);
             formularioContacto.reset();//Para que el formulario vuelva a ponerse en blanco
         }
     });
