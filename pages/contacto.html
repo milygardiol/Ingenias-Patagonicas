@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/neuquen-logo.png">
+    <link rel="stylesheet" href="../css/general.css"/>
+    <link rel="stylesheet" href="../css/contacto.css"/>
     <title>Contacto</title>
-    <link rel="stylesheet" href="/css/general.css"/>
-    <link rel="stylesheet" href="/css/contacto.css"/>
 </head>
     
 <body>
 
     <header>
         <nav class="navegación"> <!--Barra de navegación-->
-            <button class="navbutton"> <a href="/index.html">Inicio</a></button>
-            <button class="navbutton"> <a href="/pages/quienesSomos.html">Quiénes somos</a></button>
-            <button class="navbutton"> <a href=#Regiones>Regiones</a></button>
-            <button class="navbutton"> <a href="/pages/sobreNeuquen.html">Sobre Neuquén</a></button>
-            <button class="navbutton"> <a href="/pages/calendario.html"> Calendario de Fiestas</a></button>
-            <button class="navbutton"> <a href="/pages/contacto.html">Contacto</a></button>
+            <button class="navbutton"> <a href="../index.html">Inicio</a></button>
+            <button class="navbutton"> <a href="../pages/quienes-somos.html">Quiénes somos</a></button>
+            <button class="navbutton"> <a href="../pages/region.html">Regiones</a></button>
+            <button class="navbutton"> <a href="../pages/sobre-neuquen.html">Sobre Neuquén</a></button>
+            <button class="navbutton"> <a href="../pages/calendario.html"> Calendario de Fiestas</a></button>
+            <button class="navbutton"> <a href="../pages/contacto.html">Contacto</a></button>
         </nav>
+
         <h1 class="h1contacto">
             Contacto
         </h1>
@@ -28,16 +30,30 @@
         <h2 class="h2contacto">
             Formulario de contacto
         </h2>
-        <section id="formulario-contacto">
-                <form action="contactos.html" method="post">
-                    <label for="Apellido y nombre">Apellido y nombre:</label>
-                    <input class="inputcontacto" type="text" required>
-                    <label for="email">Email:</label>
-                    <input class="inputcontacto" type="email" required>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                    <button class="buttoncontacto" type="submit">Enviar</button>
+
+        <section>
+                <form action="" id="formulario-contacto">
+                    <div>
+                        <label for="Apellido y nombre">Apellido y Nombre:</label>
+                        <input type="text" class="inputcontacto" id="apellido-nombre-contacto" name="apellido-nombre" placeholder="Apellido y Nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" class="inputcontacto" id="email-contacto" name="email-contacto" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje-contacto" name="mensaje-contacto" rows="4" placeholder="Dejanos tu mensaje y pronto nos contactaremos" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="buttoncontacto">Enviar</button>
+                        <button type="reset" class="buttoncontacto">Cancelar</button>
+                    </div>
                 </form>
+
+                <div class="errores-contacto">
+                <ul id="lista-errores-contacto"></ul>
+                </div>
         </section>
     </main>
  
@@ -45,10 +61,12 @@
     <section> <!--Redes del Gobierno de la Provincia-->
         <div class="bannerfooter">
             <p>Gobierno de la Provincia</p>
-            <a href="https://twitter.com/GobProvinciaNqn" target="_blank"><img src="/images/banner-footer-X.jpg" alt="Redes del Gobierno de la Provincia: X" class="imgfooter"></a>
-            <a href="https://www.youtube.com/channel/UCq85VvDP9r_KwZUBMxw1dvA" target="_blank"><img src="/images/banner-footer-youtube.jpg" alt="Redes del Gobierno de la Provincia: Youtube" class="imgfooter"></a>
-            <a href="https://www.facebook.com/GobiernoDeLaProvinciaDelNeuquen/?locale=es_LA" target="_blank"><img src="/images/banner-footer-facebook.jpg" alt="Redes del Gobierno de la Provincia: Facebook" class="imgfooter"></a>
-            <a href="https://www.instagram.com/gobiernoprovinciadelneuquen/" target="_blank"><img src="/images/banner-footer-instagram.jpg" alt="Redes del Gobierno de la Provincia: Instagram" class="imgfooter"></a>
+
+            <a href="https://twitter.com/GobProvinciaNqn" target="_blank"><img src="../images/banner-footer-X.jpg" alt="Redes del Gobierno de la Provincia: X" class="imgfooter"></a>
+            <a href="https://www.youtube.com/channel/UCq85VvDP9r_KwZUBMxw1dvA" target="_blank"><img src="../images/banner-footer-youtube.jpg" alt="Redes del Gobierno de la Provincia: Youtube" class="imgfooter"></a>
+            <a href="https://www.facebook.com/GobiernoDeLaProvinciaDelNeuquen/?locale=es_LA" target="_blank"><img src="../images/banner-footer-facebook.jpg" alt="Redes del Gobierno de la Provincia: Facebook" class="imgfooter"></a>
+            <a href="https://www.instagram.com/gobiernoprovinciadelneuquen/" target="_blank"><img src="../images/banner-footer-instagram.jpg" alt="Redes del Gobierno de la Provincia: Instagram" class="imgfooter"></a>
+
         </div>
     </section>
 
@@ -118,6 +136,9 @@
     </section>
 </footer>
 
+<script src="../js/contacto.js"></script>
+
 </body>
 
 </html>
+

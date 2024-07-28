@@ -38,6 +38,10 @@ li {
     font-family: "Raleway";    
 }
 
+::placeholder {
+    font-family: "Open Sans";
+}
+
 
 /*ESTILO DE LINKS*/
 
@@ -47,7 +51,7 @@ a {
 }
 
 a:hover {
-    color: rgb(182, 204, 247);
+    color: rgb(158, 182, 230);
 }
 
 
@@ -132,7 +136,7 @@ margin: 0;
     display: flex;
     justify-content: space-between;
     margin: 0px 5px 0px 5px;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 20px 0px 5px;
 }
 
 .suscribite {
