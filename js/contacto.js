@@ -5,13 +5,13 @@ let rutaArchivo = "../json/contacto.json";
 let contactoJSON = fs.readFileSync(rutaArchivo,"utf-8");
 let contactoArray = JSON.parse(contactoJSON);
 
-console.log(contactoArray)
+console.log(contactoArray);
 
 
 
 // CAPTURO EL FORMULARIO Y LA INFORMACION INGRESADA EN CADA CAMPO
 
-let formularioDeContacto = document.getElementById('formulario-contacto');
+let formularioDeContacto = document.getElementById("formulario-contacto");
 let apellidoNombreContacto = document.getElementById("apellido-nombre-contacto");
 let emailContacto = document.getElementById("email-contacto");
 let mensajeContacto = document.getElementById("mensaje-contacto");
@@ -23,7 +23,7 @@ let mensajeContacto = document.getElementById("mensaje-contacto");
 - Que el campo de Apellido y Nombre no esté vacío.
 - Que el campo de Apellido y Nombre se complete con más de 4 caracteres.
 - Que el campo de Email no esté vacío.
-- Que el campo de Mensaje no supere los 60 caracteres.
+- Que el campo de Mensaje no supere los 160 caracteres.
 */
 
 window.addEventListener('load',function(){
@@ -32,41 +32,37 @@ formularioDeContacto.addEventListener("submit",function(event){
     
     let erroresContacto = [];
 
-    if (apellidoNombreContacto.value == ''){
-        erroresContacto.push('El campo Apellido y Nombre tiene que estar completo')
+    if (apellidoNombreContacto.value === ''){
+        erroresContacto.push('El campo Apellido y Nombre tiene que estar completo');
     }else if(apellidoNombreContacto.value.length < 4){
         erroresContacto.push('El campo Apellido y Nombre debe contener al menos 4 caracteres')
     }
 
-    if (emailContacto.value == ''){
+    if (emailContacto.value === ''){
         erroresContacto.push('El campo Email tiene que estar completo')
     }
 
-    if (mensajeContacto.value.length > 60){
-        erroresContacto.push('El campo Mensaje puede contener hasta 60 caracteres')
+    if (mensajeContacto.value.length > 160){
+        erroresContacto.push('El campo Mensaje puede contener hasta 160 caracteres')
     }
 
-
-    if (erroresContacto.length > 0) {event.preventDefault();
-    let ulErroresContacto = document.querySelector("#lista-errores-contacto");
+    if (erroresContacto.length > 0) {
+        event.preventDefault();
+        let ulErroresContacto = document.querySelector("#lista-errores-contacto");
         for(let i = 0; i < erroresContacto.length; i++){
-            ulErroresContacto.innerHTML += `<li> ${errores[i]} </li>`
+            ulErroresContacto.innerHTML += `<li>${erroresContacto[i]}</li>`;
         }
+    // PUSHEO INFORMACIÓN DEL FORMULARIO AL ARRAY
+    } else {
+        contactoArray.push({
+            ApellidoyNombre: apellidoNombreContacto.value,
+            Email: emailContacto.value,
+            Mensaje: mensajeContacto.value
+        });
+    // PASO A FORMATO JSON
+    let contactoJSONParaGuardar = JSON.stringify(contactoArray);
+    // ALMACENO INFORMACIÓN NUEVA EN ARCHIVO JSON
+    s.writeFileSync(rutaArchivo, contactoJSONParaGuardar,"utf-8");
     }
-})})
-
-
-
-// PUSHEO INFORMACIÓN DEL FORMULARIO AL ARRAY
-
-
-
-// PASO A FORMATO JSON
-
-let contactoJSONParaGuardar = JSON.stringify(contactoArray)
-
-
-
-// ALMACENO INFORMACIÓN NUEVA EN ARCHIVO JSON
-
-fs.writeFileSync(rutaArchivo, contactoJSONParaGuardar,"utf-8");
+});
+});

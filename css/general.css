@@ -38,6 +38,10 @@ li {
     font-family: "Raleway";    
 }
 
+::placeholder {
+    font-family: "Open Sans";
+}
+
 
 /*ESTILO DE LINKS*/
 
