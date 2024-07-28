@@ -52,17 +52,19 @@ formularioDeContacto.addEventListener("submit",function(event){
         for(let i = 0; i < erroresContacto.length; i++){
             ulErroresContacto.innerHTML += `<li>${erroresContacto[i]}</li>`;
         }
-    // PUSHEO INFORMACIÓN DEL FORMULARIO AL ARRAY
+    // SI NO HAY ERRORES PUSHEO INFORMACIÓN DEL FORMULARIO AL ARRAY
     } else {
-        contactoArray.push({
+        contactoArray.push(
+            {
             ApellidoyNombre: apellidoNombreContacto.value,
             Email: emailContacto.value,
             Mensaje: mensajeContacto.value
-        });
-    // PASO A FORMATO JSON
+            }
+        );
+    // PASO ARRAY A FORMATO JSON
     let contactoJSONParaGuardar = JSON.stringify(contactoArray);
     // ALMACENO INFORMACIÓN NUEVA EN ARCHIVO JSON
-    s.writeFileSync(rutaArchivo, contactoJSONParaGuardar,"utf-8");
+    fs.writeFileSync(rutaArchivo, contactoJSONParaGuardar,"utf-8");
     }
 });
 });
