@@ -28,6 +28,7 @@ console.log(dbContacto);
 
 window.addEventListener('load',function(){
 
+    //Creo variables para almacenar elementos de html mediante selectores
     let formularioContacto = document.getElementById("formulario-contacto");
     let inputApellidoNombre = document.getElementById("apellido-nombre-contacto");
     let inputEmailContacto = document.getElementById("email-contacto");
@@ -39,7 +40,8 @@ window.addEventListener('load',function(){
 
         event.preventDefault();
 
-        divErroresContacto.innerHTML = ''; //Limpio errores previos
+        divErroresContacto.innerHTML = ''; //Limpio errores
+        divMensajeRecibido.innerHTML = ''; //Limpio mensaje de recibido
 
         let arrayErroresContacto = [];
 
