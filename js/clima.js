@@ -6,7 +6,7 @@ const climaNeuquen = document.querySelector('#clima-en-neuquen');
 
 // API REQUEST
 
-fetch ('http://api.weatherapi.com/v1/current.json?key=473df6076f824a90a8b151109240508&q=Neuquen')
+fetch ('https://api.weatherapi.com/v1/current.json?key=473df6076f824a90a8b151109240508&q=Neuquen')
 
 .then((response) => response.json())
 
