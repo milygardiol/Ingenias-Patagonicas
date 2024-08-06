@@ -24,6 +24,10 @@
     padding: 10px 10px 10px 10px
 }
 
+#ancla {
+    visibility: hidden;
+}
+
 
 /*IMAGENES DE MESES*/
 
@@ -84,6 +88,15 @@
     color: white;
     background-color: rgb(108, 155, 170);
     padding: 5px 5px 5px 5px;
+}
+
+.volver-calendario {
+    display:flex;
+    justify-content: right;
+}
+
+.volver-calendario:hover {
+    color: inherit;
 }
 
 
