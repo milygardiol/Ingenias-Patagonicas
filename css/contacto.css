@@ -66,6 +66,10 @@ textarea {
     margin: 10px 10px 10px 0px;
 }
 
+#errores-contacto li {
+    list-style-type: none;
+}
+
 #mensaje-recibido {
     font-size: 14px;
     color: rgb(5, 155, 5);
