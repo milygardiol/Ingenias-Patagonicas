@@ -15,7 +15,15 @@
         <nav class="navegación"> <!--Barra de navegación-->
             <button class="navbutton"> <a href="../index.html">Inicio</a></button>
             <button class="navbutton"> <a href="../pages/quienes-somos.html">Quiénes somos</a></button>
-            <button class="navbutton"> <a href="../pages/region.html">Regiones</a></button>
+            <div class="desplegable">
+                <button class="navbutton">Regiones</button>
+                <div class="desplegable-opciones">
+                    <button><a href="#">Estepa</a></button>
+                    <button><a href="../pages/region.html">Lagos</a></button>
+                    <button><a href="#">Termas</a></button>
+                    <button><a href="#">Volcanes</a></button>
+                </div>
+            </div>
             <button class="navbutton"> <a href="../pages/sobre-neuquen.html">Sobre Neuquén</a></button>
             <button class="navbutton"> <a href="../pages/calendario.html"> Calendario de Fiestas</a></button>
             <button class="navbutton"> <a href="../pages/contacto.html">Contacto</a></button>
@@ -43,7 +51,7 @@
                     </div>
                     <div>
                         <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje-contacto" name="mensaje-contacto" rows="4" placeholder="Dejanos tu mensaje y pronto nos contactaremos" required></textarea>
+                        <textarea id="mensaje-contacto" name="mensaje-contacto" class="inputcontacto" rows="4" placeholder="Dejanos tu mensaje y pronto nos contactaremos" required></textarea>
                     </div>
                     <div>
                         <button type="submit" class="buttoncontacto">Enviar</button>
@@ -51,9 +59,12 @@
                     </div>
                 </form>
 
-                <div class="errores-contacto">
-                <ul id="lista-errores-contacto"></ul>
+                <div id="errores-contacto">
                 </div>
+
+                <div id="mensaje-recibido">
+                </div>
+
         </section>
     </main>
  
@@ -136,7 +147,7 @@
     </section>
 </footer>
 
-<script src="../js/contacto.js"></script>
+<script src="../js/formulario-contacto.js"></script>
 
 </body>
 

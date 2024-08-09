@@ -1,4 +1,4 @@
-//Estación en la que el usuario viajará a la provincia y fiesta recomendada en formato JSON
+//ESTACION EN LA QUE EL USUARIO VIAJARÁ A LA PROVINCIA Y FIESTA RECOMENDADA EN FORMATO JSON Y LUEGO CONVERTIDO A ARRAY
 
 let dbFiestaRecomendada = [
     {
@@ -8,22 +8,21 @@ let dbFiestaRecomendada = [
 ];
 
 dbFiestaRecomendada = JSON.stringify(dbFiestaRecomendada);
-
 let db = JSON.parse(dbFiestaRecomendada);
 
 
 
-//Pregunto al usuario en qué estación desea viajar a la provincia - convierto a minúscula
+//PREGUNTO EN QUÉ ESTACIÓN DESEA VISITAR LA PROVINCIA - CONVIERTO A MINÚSCULAS
 
 let estacionIngresada = prompt("¿En qué estación te gustaría visitar Neuquén? (verano, otoño, invierno o primavera)");
 
 estacionIngresada = estacionIngresada.toLowerCase();
 
-console.log(estacionIngresada);
+//console.log(estacionIngresada);
 
 
 
-//Alert para recomendarle la fiesta más popular de esa estación - Alert genérico
+//ALERT PARA RECOMENDARLE LA FIESTA MÁS POPULAR DE ESA ESTACIÓN - ALERT GENÉRICO
 
 let fiestaRecomendada;
 
@@ -55,7 +54,7 @@ switch (estacionIngresada) {
 
 
 
-//Push al array si la estación ingresada es válida
+//PUSH AL ARRAY SI LA ESTACIÓN INGRESADA ES VÁLIDA
 
 if (estacionIngresada === ("verano" || "primavera" || "otoño" || "invierno")) {
     db.push (
@@ -67,6 +66,6 @@ if (estacionIngresada === ("verano" || "primavera" || "otoño" || "invierno")) {
 
 
 
-//Console log de la base de datos
+//HAGO CONSOLE LOG DE LA BASE DE DATOS
 
 console.log(db);

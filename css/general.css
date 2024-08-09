@@ -68,10 +68,38 @@ a:hover {
 }
 
 .navbutton {
+    color: white;
     border: none;
     background-color: #333;
     font-size: 12px;
     margin: 0px 5px 0px 5px;
+}
+
+.desplegable {
+    position: relative;
+    display: inline-block;
+}
+
+.desplegable-opciones {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.desplegable-opciones button{
+    color: white;
+    border: none;
+    background-color: #333;
+    font-size: 12px;
+    margin: 5px 5px 5px 5px;
+    display: block;
+}
+
+.desplegable:hover .desplegable-opciones {
+    display: block;
 }
 
 
@@ -164,10 +192,18 @@ margin: 0;
         font-size: 15px;
         margin: 5px 10px 5px 10px;
     }
+
+    .desplegable-opciones button{
+        font-size: 15px;
+    }
 }
 
 @media (min-width: 990px) {
     .navbutton {
+        font-size: 20px;
+    }
+
+    .desplegable-opciones button{
         font-size: 20px;
     }
 }

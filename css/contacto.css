@@ -5,6 +5,7 @@
     color: grey;
     background-color: lightblue;
     text-align: center;
+    text-shadow: 1px 1px 3px black;
 }
 
 
@@ -38,6 +39,7 @@ label {
     margin: 2px 2px 2px 2px;
     padding: 2px 2px 2px 2px;
     border: 1px solid #ccc;
+    display: block;
 }
 
 textarea {
@@ -55,6 +57,27 @@ textarea {
     font-size: 14px;
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+#errores-contacto {
+    font-size: 14px;
+    font-weight: bolder;
+    color: red;
+    max-width: 80vw;
+    margin: 10px 10px 10px 0px;
+}
+
+#errores-contacto li {
+    list-style-type: none;
+}
+
+#mensaje-recibido {
+    font-size: 14px;
+    color: rgb(5, 155, 5);
+    font-weight: bolder;
+    max-width: 80vw;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -75,6 +98,23 @@ textarea {
         margin-top: 20px;
         margin-bottom: 30px;
     }
+
+    #errores-contacto {
+        font-size: 18px;
+        font-weight: bolder;
+        color: red;
+        max-width: 80vw;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    #mensaje-recibido {
+        font-size: 18px;
+        color: rgb(5, 155, 5);
+        font-weight: bolder;
+        max-width: 80vw;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 990px) {
@@ -91,6 +131,23 @@ textarea {
         font-size: 22px;
         margin-top: 20px;
         margin-bottom: 30px;
+    }
+
+    #errores-contacto {
+        font-size: 20px;
+        font-weight: bolder;
+        color: red;
+        max-width: 80vw;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    #mensaje-recibido {
+        font-size: 20px;
+        color: rgb(5, 155, 5);
+        font-weight: bolder;
+        max-width: 80vw;
+        margin-left: 20px;
+        margin-bottom: 20px;
     }
 }
 
